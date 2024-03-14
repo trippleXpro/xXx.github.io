@@ -1,86 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>index</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .text {
-      font-family: "Comic sans-serif;", monospace;
-      font-size: 6rem;
-      animation: blink 5s infinite;
-      margin-bottom: 1rem;
-    }
-
-    .subtext {
-      font-size: 2rem;
-      font-family: "Impact", monospace;
-      opacity: 0;
-      animation: fade 2s infinite;
-      animation-delay: 2s;
-      margin-top: 2rem;
-    }
-
-    .rotate {
-      font-size: 9rem;
-      display: inherit;
-      align-items: center;
-    }
-
-    .left-x,
-    .right-x {
-      font-family: "Raleway", Bold;
-      animation: spin 10s linear infinite;
-    }
-    .center-x {
-      font-family: "Raleway", Bold;
-    }
-    .right-x {
-      font-family: "Raleway", Bold;
-      animation-direction: alternate-reverse;
-    }
-
-    @keyframes blink {
-      0% { opacity: 0; }
-      50% { opacity: 1; }
-      100% { opacity: 0; }
-    }
-
-    @keyframes fade {
-      0% { opacity: 0; }
-      50% { opacity: 0; }
-      100% { opacity: 0.7; }
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="text">Soon...</h1>
-    <p class="subtext">XperienceXchangeXperts</p>
-    <div class="rotate">
-      <div class="left-x">x</div>
-      <div class="center-x">X</div>
-      <div class="right-x">x</div>
-    </div>
-    <p class="subtext">project</p>
-  </div>
+    <header>
+        <h1>Добро пожаловать на мой сайт</h1>
+    </header>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+    </nav>
+    <main>
+        <h2>Добро пожаловать!</h2>
+        <p>Здесь будет содержимое вашего сайта.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Мой сайт. Все права защищены.</p>
+    </footer>
 </body>
 </html>

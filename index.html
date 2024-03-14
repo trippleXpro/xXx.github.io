@@ -112,8 +112,8 @@
                 <th>Значение</th>
             </tr>
             <tr>
-                <td>Количество пользователей</td>
-                <td id='users'></td>
+                <td>Твой username</td>
+                <td id='user_name'></td>
             </tr>
             <tr>
                 <td>Твой ID</td>
@@ -128,10 +128,10 @@
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script>
             let tg = window.Telegram.WebApp;
-            let usersCell = document.getElementById('users');
+            let usersCell = document.getElementById('user_name');
             let idCell = document.getElementById('id');
             tg.expand();
-            usersCell.textContent = tg.initDataUnsafe.user.id;
+            usersCell.textContent = tg.initDataUnsafe.user.username;
             idCell.textContent = tg.initDataUnsafe.user.id;
         </script>
     </main> 
